@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                g++ -c main.cpp
-                g++ ./main.o -o main.exe
+                // g++ -c main.cpp
+                // g++ ./main.o -o main.exe
             }
             steps {
                 ls
-                ./main.exe
+                // ./main.exe
             }
         }
         stage('Test') {
@@ -25,8 +25,8 @@ pipeline {
         }
         stage('Clean') {
             steps {
-                rm ./main.o
-                rm ./main.exe
+                // rm ./main.o
+                // rm ./main.exe
             }
         }
     }
