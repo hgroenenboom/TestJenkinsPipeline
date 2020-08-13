@@ -7,8 +7,6 @@ pipeline {
                 echo 'Building..'
                 // g++ -c main.cpp
                 // g++ ./main.o -o main.exe
-            }
-            steps {
                 ls
                 // ./main.exe
             }
