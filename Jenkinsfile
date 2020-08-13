@@ -3,11 +3,11 @@ pipeline {
 
     stages {
         stage('Build') {
+            sh "ls"
             steps {
                 echo 'Building..'
                 // g++ -c main.cpp
                 // g++ ./main.o -o main.exe
-                sh "ls"
                 // ./main.exe
             }
         }
@@ -22,11 +22,7 @@ pipeline {
             }
         }
         stage('Clean') {
-            steps {
-                sh "ls"
-                // rm ./main.o
-                // rm ./main.exe
-            }
+            sh "ls"
         }
     }
     
