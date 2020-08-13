@@ -5,6 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                g++ -o main.cpp
+            }
+            steps {
+                ls
+                ./a.exe
             }
         }
         stage('Test') {
@@ -15,6 +20,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+            }
+        }
+        stage('Clean') {
+            steps {
+                rm ./a.exe
             }
         }
     }
