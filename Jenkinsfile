@@ -19,9 +19,11 @@ pipeline {
         }
     }
     
+    /*
     node {
-        /* triggers the checkout of the current git commit that triggered the pipeline (webhook) */
+        // triggers the checkout of the current git commit that triggered the pipeline (webhook)
         checkout scm 
-        /* .. snip .. */
+        // .. snip ..
     }
+    */
 }
