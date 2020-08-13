@@ -23,6 +23,7 @@ pipeline {
         }
         stage('Clean') {
             steps {
+                sh "ls"
                 // rm ./main.o
                 // rm ./main.exe
             }
